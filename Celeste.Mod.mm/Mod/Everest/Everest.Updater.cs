@@ -80,7 +80,7 @@ namespace Celeste.Mod {
 
                     string data;
                     try {
-                        Logger.Log(LogLevel.Debug, "updater", "Attempting to download update list from source: " + Index);
+                        Logger.Log(LogLevel.Debug, "updater", "Attempting to download update list from source: " + Index());
                         using (WebClient wc = new CompressedWebClient()) {
                             data = wc.DownloadString(Index());
                         }
